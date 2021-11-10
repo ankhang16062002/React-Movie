@@ -6,7 +6,6 @@ import {useEffect} from 'react'
 const Catalog = () => {
 
     const {category} = useParams()
-
     useEffect(() => {
         window.scroll({
             top: 0,
