@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 
 import SliderHome from '../components/slider-home/SliderHome'
@@ -9,6 +9,15 @@ import{category, movieType, tvType, mediaType, timeWindow} from '../api/pagesDb'
 
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
+    })
+
     return (
         <>
             <div className="home">

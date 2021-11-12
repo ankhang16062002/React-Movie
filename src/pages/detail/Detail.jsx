@@ -34,7 +34,6 @@ const Detail = () => {
             const params = {}
             try {
                 const data = await pagesDb.getDetails(category === 'trending' ? 'movie' : category, id, params)
-                console.log(data)
                 setItem(data)
             } catch(error){
                 console.log(error)
