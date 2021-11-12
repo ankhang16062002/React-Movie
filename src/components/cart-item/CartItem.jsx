@@ -7,8 +7,6 @@ import {Link} from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
-
-
 const CartItem = (props) => {
 
     const item = props.item

@@ -123,17 +123,19 @@
         }
     }
 
-    &:hover {
-        transform: scale(1.03) translateY(-2px) rotateY(5deg);
-
-        &::before {
-            opacity: 1;
-        }
-
-        .icon-youtube {
-            i {
-                visibility: visible;
-                transform: scale(1.1);
+    @media (hover : hover ) {
+        &:hover {
+            transform: scale(1.03) translateY(-2px) rotateY(5deg);
+    
+            &::before {
+                opacity: 1;
+            }
+    
+            .icon-youtube {
+                i {
+                    visibility: visible;
+                    transform: scale(1.1);
+                }
             }
         }
     }
