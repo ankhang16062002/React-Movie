@@ -122,23 +122,25 @@
            transition: all 0.3s linear;
         }
     }
-
-    @media (hover : hover ) {
-        &:hover {
-            transform: scale(1.03) translateY(-2px) rotateY(5deg);
-    
-            &::before {
-                opacity: 1;
-            }
-    
-            .icon-youtube {
-                i {
-                    visibility: visible;
-                    transform: scale(1.1);
+        
+        @media (pointer:fine) {
+            &:hover {
+                transform: scale(1.03) translateY(-2px) rotateY(5deg);
+        
+                &::before {
+                    opacity: 1;
+                }
+        
+                .icon-youtube {
+                    i {
+                        visibility: visible;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
-    }
+
+
 }
 
 @media (hover:hover) {
