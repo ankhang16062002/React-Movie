@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {useRef, useEffect} from 'react'
 
 import './button.scss'
 
@@ -11,21 +10,10 @@ const Button = (props) => {
 }
 
 export const ButtonOutline = (props) => {
-    const buttonRef = useRef(null)
-
-    useEffect(() => {
-        buttonRef.current.addEventListener('touchstart', props.onClick)
-
-        return () => {
-            buttonRef.current.removeEventListener('touchstart',  props.onClick)
-        }
-    }, [props.onClick])
-
     return (
         <button 
             className='btn outline'
             onClick = {props.onClick}
-            ref = {buttonRef}
         >
             {props.children}
         </button>
