@@ -6,11 +6,12 @@ import pagesDb from '../../api/pagesDb'
 import PropTypes from 'prop-types'
 
 import {Swiper, SwiperSlide} from 'swiper/react'
+// import SwiperCore, {Autoplay} from 'swiper'
 
 import './list-item.scss'
 
 const ListItem = (props) => {
-
+    // SwiperCore.use([Autoplay])
     const [items, setItems] = useState([])
 
     useEffect(() => {
@@ -44,6 +45,7 @@ const ListItem = (props) => {
                 speed={500}
                 spaceBetween={10}
                 slidesPerView = {'auto'}
+                // autoplay = {true}
             >
             {   
                 items.map((item, index) => (
